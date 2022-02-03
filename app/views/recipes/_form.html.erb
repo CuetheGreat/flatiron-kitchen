@@ -1,7 +1,10 @@
-<%= form_for @recipe do |f| %>
+<%= form_for recipe_item do |f| %>
   <div class='field'>
     <%= f.label :name %>
     <%= f.text_field :name %> <br>
-    <%= f.submit%>
   </div>
+  <div class='field'>
+    <%= f.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name %>
+  </div>
+  <%= f.submit%>
 <% end %>
