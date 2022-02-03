@@ -1,13 +1,13 @@
-Resolving dependencies...
-Resolving dependencies...
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>FlatironKitchen</title>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "application" , media: "all" , "data-turbolinks-track"=> true %>
+      <%= javascript_include_tag "application" , "data-turbolinks-track"=> true %>
+        <%= csrf_meta_tags %>
   </head>
+
   <body>
     <nav>
       <a href='/recipes'>Recipes</a>
@@ -15,4 +15,5 @@ Resolving dependencies...
     </nav>
     <%= yield %>
   </body>
+
 </html>

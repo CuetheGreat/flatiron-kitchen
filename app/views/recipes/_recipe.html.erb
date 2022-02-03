@@ -1,0 +1,6 @@
+<p><%= link_to recipe_item.name, recipe_path(recipe_item) %></p>
+<ul>
+  <% recipe_item.ingredients.each do |ingredient|%>
+    <li><%= render partial: 'ingredients/ingredient', locals: { ingredient_item: ingredient } %></li>
+  <% end %>
+</ul>

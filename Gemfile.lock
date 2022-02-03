@@ -193,7 +193,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
-  ruby
+  x86_64-darwin-20
 
 DEPENDENCIES
   actionpack
@@ -215,4 +215,4 @@ DEPENDENCIES
   uglifier
 
 BUNDLED WITH
-   2.1.4
+   2.3.6
